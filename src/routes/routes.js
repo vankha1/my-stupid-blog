@@ -3,7 +3,7 @@ import Following from '~/pages/Following';
 
 const publicRoutes = [
     {path: '/', component : Home},
-    {path: '/following', component : Following}
+    {path: '/blog', component : Following}
 ]
 
 const privateRoutes = [

@@ -1,0 +1,40 @@
+
+.search {
+    // Because the input focus makes search shrinking, we need to set border for the search
+    position: relative;
+    border: 1.5px solid transparent;
+    input {
+        height: 40px;
+        padding-left: 10px;
+        background-color: rgba(22, 24, 35, 0.06);
+        font-size: 1rem;
+        font-family: var(--font-family);
+        border: none;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        outline: none;
+    }
+}
+.clear {
+    font-size: 18px;
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(22, 24, 35, 0.34);
+    border: none;
+}
+
+.search-btn {
+    font-size: 12.5px;
+    padding: 0 20px;
+    padding-bottom: 12px;
+    padding-top: 14px;
+    background-color: #0C54B8;
+    border: none;
+    color: var(--white);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-weight: 100;
+    cursor: pointer;
+}
