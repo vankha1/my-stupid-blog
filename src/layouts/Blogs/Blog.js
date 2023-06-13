@@ -8,7 +8,7 @@ function Blog( { blogs }) {
     return (
         <div className={cx('wrapper')}>
             {blogs.map((blog, index) => {
-                return <BlogItem key={index} to={blog.to} srcImage={blog.srcImage} title={blog.title} description={blog.description} />;
+                return <BlogItem key={index} to={`/blog/${blog.id}`} srcImage={blog.srcImage} title={blog.title} description={blog.description} />;
             })}
         </div>
     );

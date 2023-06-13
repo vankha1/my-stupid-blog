@@ -7,6 +7,7 @@ import { faCircleXmark } from "@fortawesome/free-regular-svg-icons";
 import { SearchIcon } from "~/components/Icons";
 import blogs from "~/data/blogs";
 import Blog from "../Blogs/Blog";
+import EmptyList from "~/components/EmptyList";
 
 
 const cx = classNames.bind(styles);
@@ -54,7 +55,7 @@ function Search() {
                     <SearchIcon />
                 </button>
             </div>
-            <Blog blogs={searchResult} />
+            { searchResult.length > 0 ? <Blog blogs={searchResult} /> : <EmptyList />}
         </div>
     );
 }

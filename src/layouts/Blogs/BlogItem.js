@@ -14,11 +14,11 @@ function BlogItem({ to, srcImage, title, description }) {
                 src={srcImage}
                 alt=""
             />
-            <h2>{title}</h2>
+            <h2 className={cx('title')}>{title}</h2>
             <p className={cx('description')}>
                 {description}
             </p>
-            <Button to={to} primary small>View more</Button>
+            <Button className={cx('view-more-btn')} to={to} primary small>View more <span>&#8594;</span></Button>
         </Link>
     );
 }

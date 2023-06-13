@@ -8,14 +8,21 @@
 .title{
     color: #137BF1;
     font-weight: 700;
+    font-size: 2rem;
 }
 
 .blog-name{
     margin-top: -5px;
-    font-size: 50px;
+    font-size: 3rem;
+    color: #0f52ba;
+    span {
+        color: #b0c4de;
+    }
 }
 
 .quote{
     margin-top: -5px;
     text-align: center;
+    color: #a9a9a9;
+    font-weight: 500;
 }
