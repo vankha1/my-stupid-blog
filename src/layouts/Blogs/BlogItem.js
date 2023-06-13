@@ -1,13 +1,14 @@
 import classNames from "classnames/bind";
 import styles from './Blog.module.scss';
 import Button from "~/components/Button";
+import { Link } from "react-router-dom";
 
 
 const cx = classNames.bind(styles);
 
 function BlogItem({ to, srcImage, title, description }) {
     return ( 
-        <div className={cx('wrapper-item')}>
+        <Link className={cx('wrapper-item')} to={to}>
             <img 
                 className={cx('avatar')}
                 src={srcImage}
@@ -18,7 +19,7 @@ function BlogItem({ to, srcImage, title, description }) {
                 {description}
             </p>
             <Button to={to} primary small>View more</Button>
-        </div>
+        </Link>
     );
 }
 
