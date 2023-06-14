@@ -9,11 +9,16 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: rgb(204, 237, 246);
+    background-color: rgb(193, 235, 238);
+    // background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWQ81r7269OJeCyrKwc3CRI1UuvXquj7myDQ&usqp=CAU);
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; 
+    background-position: center;
 }
 
 button,

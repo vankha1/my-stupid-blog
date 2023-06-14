@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Content from "~/layouts/Contents";
 import blogs from "~/data/blogs";
+import Footer from "~/layouts/Footer/Footer";
 
 function Following() {
     const {index} = useParams();
@@ -22,6 +23,7 @@ function Following() {
         <div>
             {/* <h1>Following page</h1> */}
             {!!selectedBlog && <Content blog={selectedBlog} />}
+            <Footer />
         </div>
     );
 }

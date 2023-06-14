@@ -4,6 +4,8 @@
 }
 
 .go-back-btn {
+    margin-top: 20px;
+    margin-left: 30px;
     text-decoration: none;
     font-size: 1.2rem;
     color: #a9a9a9;
@@ -16,6 +18,7 @@
     color: #a9a9a9;
     font-weight: 500;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .main-title {
@@ -23,13 +26,14 @@
 }
 
 .avatar {
+    margin: 20px 5px;
     width: 100%;
     object-fit: cover;
     overflow: hidden;
 }
 
 .content {
-    padding: 1rem;
+    // padding: 1rem;
     margin-top: 1.5rem;
     font-size: 18px;
 }
