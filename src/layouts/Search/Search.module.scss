@@ -9,13 +9,14 @@
     input {
         height: 42px;
         padding-left: 10px;
-        background-color: rgba(24, 25, 33, 0.06);
+        background-color: rgba(252, 252, 252, 0.06);
         font-size: 1rem;
         font-family: var(--font-family);
         border: none;
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
         outline: none;
+        color: white;
     }
     .clear {
         // margin: auto;

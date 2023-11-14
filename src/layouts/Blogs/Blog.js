@@ -1,14 +1,16 @@
 import classNames from 'classnames/bind';
 import styles from './Blog.module.scss';
 import BlogItem from './BlogItem';
-
+import images from '~/assets/images';
 const cx = classNames.bind(styles);
 
-function Blog( { blogs }) {
+
+function Blog( { postMetas }) {
+
     return (
         <div className={cx('wrapper')}>
-            {blogs.map((blog, index) => {
-                return <BlogItem key={index} to={`/blog/${blog.id}`} srcImage={blog.srcImage} title={blog.title} description={blog.description} />;
+            {postMetas?.map((post, index) => {
+                return <BlogItem key={index} to={`/blog/${post.id}`} thumbnailUrl={images[post.thumbnailUrl]} title={post.title} summary={post.summary} />;
             })}
         </div>
     );

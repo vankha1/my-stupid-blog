@@ -2,21 +2,22 @@ import classNames from "classnames/bind";
 import styles from './Blog.module.scss';
 import Button from "~/components/Button";
 import { Link } from "react-router-dom";
-
+// import images from "~/assets/images";
 
 const cx = classNames.bind(styles);
 
-function BlogItem({ to, srcImage, title, description }) {
+function BlogItem({ to, thumbnailUrl, title, summary }) {
     return ( 
         <Link className={cx('wrapper-item')} to={to}>
-            <img 
-                className={cx('avatar')}
-                src={srcImage}
-                alt=""
-            />
-            <h2 className={cx('title')}>{title}</h2>
+            <div className={cx('avatar')}>
+                <img 
+                    src={thumbnailUrl}
+                    alt=""
+                />
+            </div>
+            <h2 className={cx('category')}>{title}</h2>
             <p className={cx('description')}>
-                {description}
+                {summary}
             </p>
             <Button className={cx('view-more-btn')} to={to} primary small>View more <span>&#8594;</span></Button>
         </Link>

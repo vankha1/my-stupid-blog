@@ -1,3 +1,9 @@
+# I learned new things from this project
+
+- **useParams** để lấy parameter trên url và object khởi tạo phải có tên trùng với slug.  Trước khi so sánh cần phải parseInt (index)
+
+- Nên dùng display grid đối với trường hợp thẻ --> dễ dàng để css cho mobile.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

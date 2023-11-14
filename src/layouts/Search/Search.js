@@ -5,7 +5,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleXmark } from "@fortawesome/free-regular-svg-icons";
 
 import { SearchIcon } from "~/components/Icons";
-import blogs from "~/data/blogs";
+// import posts from "~/posts.json";
+import postMetas from "~/data/post-metas";
 import Blog from "../Blogs/Blog";
 import EmptyList from "~/components/EmptyList";
 
@@ -14,7 +15,8 @@ const cx = classNames.bind(styles);
 
 function Search() {
     const [searchValue, setSearchValue] = useState('');
-    const [searchResult, setSearchResult] = useState(blogs)
+    const [searchResult, setSearchResult] = useState(postMetas)
+    // console.log(postMetas);
     const inputRef = useRef();
 
     const handleChange = (e) => {
@@ -32,8 +34,9 @@ function Search() {
 
     
     useEffect(() => {
-        const filteredResult = blogs.filter((blog) => {
-            return blog.title.toLowerCase().includes(searchValue.toLowerCase());
+        const filteredResult = postMetas?.filter((post) => {
+            // console.log(post);
+            return post.title.toLowerCase().includes(searchValue.toLowerCase());
         })
         setSearchResult(filteredResult);
     }, [searchValue])
@@ -44,7 +47,7 @@ function Search() {
                 <input 
                     ref={inputRef}
                     value={searchValue}
-                    placeholder="Search by Category"
+                    placeholder="Search by Title"
                     spellCheck={false}
                     onChange={handleChange}
                 />
@@ -55,7 +58,7 @@ function Search() {
                     <SearchIcon />
                 </button>
             </div>
-            { searchResult.length > 0 ? <Blog blogs={searchResult} /> : <EmptyList />}
+            { searchResult.length > 0 ? <Blog postMetas={searchResult} /> : <EmptyList />}
         </div>
     );
 }

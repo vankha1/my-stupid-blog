@@ -9,7 +9,7 @@ const cx = classNames.bind(styles);
 function Footer() {
     return (
         <div className={cx('footer-wrapper')}>
-            <p>Contact with me <FontAwesomeIcon className={cx('heart')} icon={faHeart} /></p>
+            <p className={cx('title')}>Contact with me <FontAwesomeIcon className={cx('heart')} icon={faHeart} /></p>
             <div>
                 <a href="mailto:vovankha2k3@gmail.com">
                     <FontAwesomeIcon className={cx('icon')} icon={faEnvelope} />

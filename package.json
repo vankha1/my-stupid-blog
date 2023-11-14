@@ -9,16 +9,31 @@
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
     "classnames": "^2.3.2",
     "clsx": "^1.2.1",
+    "crypto-browserify": "^3.12.0",
+    "highlight.js": "^11.8.0",
+    "interweave": "^13.1.0",
+    "markdown-to-jsx": "^7.2.1",
+    "marked": "^5.1.1",
     "normalize.css": "^8.0.1",
+    "path-browserify": "^1.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.12.1",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "react-markdown": "^8.0.7",
+    "react-markdown-to-html": "^1.0.11",
+    "react-router-dom": "^6.13.0",
+    "react-scripts": "^5.0.1",
+    "react-syntax-highlighter": "^15.5.0",
+    "rehype-autolink-headings": "^6.1.1",
+    "rehype-highlight": "^6.0.0",
+    "remark-rehype": "^10.1.0",
+    "replace-ext": "^2.0.0",
+    "stream-browserify": "^3.0.0",
+    "vfile": "^6.0.0",
+    "web-vitals": "^3.3.2"
   },
   "scripts": {
     "start": "react-app-rewired start",
@@ -45,9 +60,12 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "babel-plugin-module-resolver": "^5.0.0",
     "customize-cra": "^1.0.0",
+    "dotenv-webpack": "^8.0.1",
+    "process": "0.11.10",
     "react-app-rewired": "^2.2.1",
-    "sass": "^1.63.3"
+    "sass": "^1.63.4"
   }
 }

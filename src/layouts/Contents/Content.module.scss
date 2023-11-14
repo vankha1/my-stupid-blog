@@ -25,15 +25,17 @@
     text-align: center;
 }
 
-.avatar {
-    margin: 20px 5px;
-    width: 100%;
-    object-fit: cover;
-    overflow: hidden;
-}
+// .avatar {
+//     margin: 20px 5px;
+//     width: 100%;
+//     object-fit: cover;
+//     overflow: hidden;
+// }
 
 .content {
     // padding: 1rem;
+    width: 70%;
+    margin: auto;
     margin-top: 1.5rem;
-    font-size: 18px;
+    font-size: 20px;
 }
